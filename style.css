@@ -1,64 +1,109 @@
-* {
-	box-sizing: border-box;
+/* Global styles */
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #f7f7f7;
 	margin: 0;
 	padding: 0;
-}
-
-body {
-	background-color: #f2f2f2;
-	font-family: Arial, sans-serif;
-}
-
-.container {
-	max-width: 800px;
-	margin: 50px auto;
+  }
+  
+  /* Header styles */
+  header {
 	padding: 20px;
-	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-form {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-}
-
-label {
-	flex: 1;
-	margin-right: 10px;
-	font-size: 20px;
-}
-
-input {
-	flex: 2;
-	padding: 10px;
-	font-size: 20px;
-	border: 2px solid #ccc;
-	border-radius: 5px;
-}
-
-button {
-	flex: 1;
-	padding: 10px;
-	font-size: 20px;
-	background-color: #4CAF50;
+	background-color: #333;
 	color: #fff;
+	text-align: center;
+  }
+
+  main {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+
+  }
+  
+  /* Main container styles */
+  .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+  }
+  
+  /* Current weather container styles */
+  #current-weather {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+  }
+  
+  /* Forecast container styles */
+  #forecast {
+	display: flex;
+	
+  }
+  #forecast > div {
+	padding-left: 6%;
+	padding-right: 2%;
+	border:#333;
+	border-style: solid;
+  }
+  
+  /* Form container styles */
+  .left-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+  }
+  
+  /* Form styles */
+  form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  label {
+	font-weight: bold;
+  }
+  
+  input[type=text] {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	width: 100%;
+  }
+  
+  button[type=submit] {
+	background-color: #333;
+	color: #fff;
+	padding: 12px 20px;
 	border: none;
-	border-radius: 5px;
+	border-radius: 4px;
 	cursor: pointer;
-	transition: background-color 0.3s ease;
-}
-
-button:hover {
-	background-color: #3e8e41;
-}
-
-#weather-data {
-	margin-top: 20px;
-	font-size: 20px;
-}
+  }
+  
+  button[type=submit]:hover {
+	background-color: #555;
+  }
+  
+  /* Search history container styles */
+  #search-history {
+	margin-top: 30px;
+  }
+  
+  /* Footer styles */
+  footer {
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+  }
+  

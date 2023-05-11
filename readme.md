@@ -5,10 +5,10 @@
 
 This is a weather application used to check weather in cities:
 
-[link to project] https://sschrimmer.github.io/PasswordGenerator/
+[link to project] https://sschrimmer.github.io/The-Weather-App/
 
 
-![](./Images/PasswordGeneratorSC.png)
+![Screen Shot](./Assets/Screenshot.png)
 
 ## Installation
 
